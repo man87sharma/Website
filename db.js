@@ -35,10 +35,10 @@ db.serialize(() => {
     created_at DATETIME DEFAULT CURRENT_TIMESTAMP
   )`);
 
-  db.run(\`CREATE TABLE IF NOT EXISTS terms (
+  db.run(`CREATE TABLE IF NOT EXISTS terms (
     id INTEGER PRIMARY KEY CHECK (id = 1),
     text TEXT
-  )\`);
+  )`);
 });
 
 module.exports = db;
